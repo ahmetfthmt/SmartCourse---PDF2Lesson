@@ -29,3 +29,7 @@
 - [x] Etkin, tamamlanan ve sıradaki ders durumlarını görsel bir yol haritası olarak uygula
 - [x] Ders akışı menüsünü masaüstü ve mobil kurs görüntüleyicide doğrula
 - [x] Ders akışı menüsünü gerçek mobil viewportta görsel olarak doğrula
+- [x] GitHub aktarımı için proje yapısı, gizli değişkenler ve başlangıç komutlarını belgele
+- [x] Render dağıtımı için render.yaml ve kurulum yönergelerini ekle
+- [x] Kategorize edilmiş kaynak dosyaları ile açıklamaları içeren dışa aktarma paketini oluştur
+- [x] ZIP paketini içerik ve arşiv bütünlüğü açısından doğrula
