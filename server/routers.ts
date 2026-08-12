@@ -1,4 +1,7 @@
 import { COOKIE_NAME } from "@shared/const";
+import { GenerateCourseInputSchema } from "../shared/course";
+import { generateCourse } from "./courseProvider";
+import { parsePdfToMarkdown } from "./pdfParser";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
@@ -17,12 +20,16 @@ export const appRouter = router({
     }),
   }),
 
-  // TODO: add feature routers here, e.g.
-  // todo: router({
-  //   list: protectedProcedure.query(({ ctx }) =>
-  //     db.getUserTodos(ctx.user.id)
-  //   ),
-  // }),
+  course: router({
+    generate: publicProcedure.input(GenerateCourseInputSchema).mutation(async ({ input }) => {
+      if (!input.pdfBase64.startsWith("data:application/pdf;base64,")) throw new Error("Yalnızca PDF dosyaları kabul edilir.");
+      const encoded = input.pdfBase64.split(",")[1];
+      if (!encoded) throw new Error("PDF verisi okunamadı.");
+      const parsed = await parsePdfToMarkdown(Buffer.from(encoded, "base64"));
+      const course = await generateCourse(input, parsed.markdownContent);
+      return { course, parsedDocument: { pageCount: parsed.structuredJson.pageCount, titleSnippet: parsed.structuredJson.titleSnippet, sectionCount: parsed.structuredJson.sections.length } };
+    }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

@@ -1,0 +1,20 @@
+# Proje TODO
+
+- [x] Türkçe ve İngilizce arayüz metinleri ile dil değiştirme mekanizmasını oluştur
+- [x] PDF dosyası sürükle-bırak yükleme deneyimini ve animasyonlu ilerleme durumlarını geliştir
+- [x] PDF metnini Markdown ve hiyerarşik JSON'a dönüştüren sunucu ayrıştırıcısını uygula
+- [x] Zod tabanlı kurs, modül, ders ve quiz şemalarını tanımla
+- [x] Kullanıcının yalnızca seçtiği OpenAI veya Gemini sağlayıcısıyla geçici API anahtarı üzerinden kurs üretmesini sağla
+- [x] Pedagojik sıralama yönergeleriyle yapılandırılmış kurs üretim prosedürünü geliştir
+- [x] Dexie üzerinde kursları, ilerlemeyi ve yerel ayarları çevrimdışı sakla
+- [x] Modül gezintisi, ders paneli, tamamlama takibi ve genel ilerleme içeren CourseViewer'ı oluştur
+- [x] Anında geri bildirim ve açıklama veren etkileşimli quiz deneyimini oluştur
+- [x] PWA manifesti, servis çalışanı ve çevrimdışı kabuk önbelleklemesini yapılandır
+- [x] Otomatik testleri yaz, tip kontrollerini çalıştır ve arayüzü masaüstü ile mobilde doğrula
+- [x] Ana sayfadaki dosya yükleme, dil seçimi, ilerleme ve kurs üretimi entegrasyonunu doğrula
+- [x] Kurs yönlendirmelerindeki iç içe bağlantıları düzelt ve yerel kurs akışını uçtan uca doğrula
+- [x] Quiz seçiminden hemen sonra doğru/yanlış açıklamasını göster
+- [x] PWA manifesti, servis çalışanı ve çevrimdışı kabuk davranışını doğrula
+- [x] Üretim derlemesinin bellek sınırları içinde tamamlandığını doğrula
+- [ ] Kullanıcının sağlayıcı anahtarıyla gerçek PDF'den canlı kurs üretimi akışını doğrula
+- [x] Servis çalışanı kabuğundaki ana sayfa önbellek girdisini doğrula

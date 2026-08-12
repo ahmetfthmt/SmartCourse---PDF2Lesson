@@ -1,0 +1,10 @@
+{
+  "name": "SmartCourse — AI Learning Designer",
+  "short_name": "SmartCourse",
+  "description": "Create structured, offline-ready courses from PDFs with your own AI provider.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
