@@ -25,3 +25,7 @@
 - [x] PWA kabuğunun güncel istemci kodunu ağdan yenileyebilmesini sağla
 - [x] Sağlayıcı model listesi sıralaması ve kota/yedekleme zinciri için mock’lu entegrasyon testleri ekle
 - [x] Servis çalışanı denetleyicisi değiştiğinde güncel istemci kabuğunu güvenle yeniden yükle ve aktivasyonu doğrula
+- [x] Modül ve ders verilerinden öğrenme aşamalarını otomatik türeten ders akışı menüsünü tasarla
+- [x] Etkin, tamamlanan ve sıradaki ders durumlarını görsel bir yol haritası olarak uygula
+- [x] Ders akışı menüsünü masaüstü ve mobil kurs görüntüleyicide doğrula
+- [x] Ders akışı menüsünü gerçek mobil viewportta görsel olarak doğrula
