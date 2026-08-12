@@ -34,14 +34,17 @@ export const CourseSchema = z.object({
 });
 
 export const LanguageSchema = z.enum(["tr", "en"]);
-export const ProviderSchema = z.enum(["openai", "gemini"]);
+export const ProviderSchema = z.enum(["openai", "gemini", "openrouter"]);
 
-export const GenerateCourseInputSchema = z.object({
-  fileName: z.string().min(1).max(180),
-  pdfBase64: z.string().min(100).max(12_000_000),
+export const ProviderAccessInputSchema = z.object({
   provider: ProviderSchema,
   apiKey: z.string().min(8).max(500),
-  model: z.string().min(2).max(120),
+});
+
+export const GenerateCourseInputSchema = ProviderAccessInputSchema.extend({
+  fileName: z.string().min(1).max(180),
+  pdfBase64: z.string().min(100).max(12_000_000),
+  model: z.string().min(2).max(120).default("auto"),
   language: LanguageSchema,
 });
 

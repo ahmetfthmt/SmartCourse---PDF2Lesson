@@ -18,3 +18,10 @@
 - [x] Üretim derlemesinin bellek sınırları içinde tamamlandığını doğrula
 - [ ] Kullanıcının sağlayıcı anahtarıyla gerçek PDF'den canlı kurs üretimi akışını doğrula
 - [x] Servis çalışanı kabuğundaki ana sayfa önbellek girdisini doğrula
+- [x] OpenAI, Gemini ve OpenRouter anahtarlarında erişilebilir modelleri keşfet
+- [x] En yüksek öncelikli uygun modeli seçen ve kota/hız sınırında yedek modele geçen üretim katmanını oluştur
+- [x] OpenRouter sağlayıcısını, model keşfini ve otomatik seçim durumunu AI ayarlarına ekle
+- [x] Sağlayıcı model sıralaması ile hata/yedekleme davranışını test et ve doğrula
+- [x] PWA kabuğunun güncel istemci kodunu ağdan yenileyebilmesini sağla
+- [x] Sağlayıcı model listesi sıralaması ve kota/yedekleme zinciri için mock’lu entegrasyon testleri ekle
+- [x] Servis çalışanı denetleyicisi değiştiğinde güncel istemci kabuğunu güvenle yeniden yükle ve aktivasyonu doğrula
