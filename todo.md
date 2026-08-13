@@ -33,3 +33,7 @@
 - [x] Render dağıtımı için render.yaml ve kurulum yönergelerini ekle
 - [x] Kategorize edilmiş kaynak dosyaları ile açıklamaları içeren dışa aktarma paketini oluştur
 - [x] ZIP paketini içerik ve arşiv bütünlüğü açısından doğrula
+- [x] GitHub ile kaynak paketini depoya aktarma rehberini hazırla
+- [x] Render Blueprint üzerinden dağıtım, ortam değişkenleri ve doğrulama rehberini hazırla
+- [x] Adım adım dağıtım rehberini dosya olarak doğrula ve teslim et
+- [ ] GitHub ve Render dağıtım rehberini kullanıcıya ek olarak teslim et
